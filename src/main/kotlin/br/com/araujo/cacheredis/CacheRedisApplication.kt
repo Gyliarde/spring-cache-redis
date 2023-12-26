@@ -21,6 +21,7 @@ class ApplicationRunner(val productService: ProductService) : ApplicationRunner 
 
 	@Throws(Exception::class)
 	override fun run(args: ApplicationArguments) {
+
 		println("Id: 1 ${productService.getById(1)}")
 		println("Id: 2 ${productService.getById(2)}")
 		println("Id: 1 ${productService.getById(1)}")
